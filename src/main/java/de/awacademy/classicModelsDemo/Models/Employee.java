@@ -22,6 +22,7 @@ public class Employee {
     @JoinColumn(name = "officeCode", referencedColumnName = "officeCode")
     private Office office;
 
+
     @OneToOne
     @JoinColumn(name = "reportsTo", referencedColumnName = "employeeNumber")
     private Employee boss;
