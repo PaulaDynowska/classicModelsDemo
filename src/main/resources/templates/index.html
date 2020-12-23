@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Classic Models Shop</title>
@@ -7,7 +7,7 @@
 </head>
 <body>
 <section class="hero is-primary">
-    <div class="hero-body">
+    <div class="hero-body">;
         <div class="container">
             <h1 class="title">
                 Classic Models
@@ -26,8 +26,9 @@
             <th>Office Code</th>
             <th>City</th>
             <th>Phone</th>
-            <th>Address</th>
-            <th>Address</th>
+<!--            <th>Address</th>-->
+<!--            <th>Address</th>-->
+            <th>Full Address</th>
             <th>State</th>
             <th>Country</th>
             <th>Postal Code</th>
@@ -38,8 +39,9 @@
             <td th:text="${office.officeCode}"></td>
             <td th:text="${office.city}"></td>
             <td th:text="${office.phone}"></td>
-            <td th:text="${office.addressLine1}"></td>
-            <td th:text="${office.addressLine2}"></td>
+<!--            <td th:text="${office.addressLine1}"></td>-->
+<!--            <td th:text="${office.addressLine2}"></td>-->
+            <td th:text="${office.fullAddress}"></td>
             <td th:text="${office.state}"></td>
             <td th:text="${office.country}"></td>
             <td th:text="${office.postalCode}"></td>

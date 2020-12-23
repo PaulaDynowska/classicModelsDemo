@@ -95,6 +95,11 @@ public class Employee {
         this.jobTitle = jobTitle;
     }
 
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -108,4 +113,6 @@ public class Employee {
                 ", jobTitle='" + jobTitle + '\'' +
                 '}';
     }
+
+
 }

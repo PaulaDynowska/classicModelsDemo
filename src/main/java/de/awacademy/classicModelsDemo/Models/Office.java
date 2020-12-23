@@ -144,6 +144,10 @@ public class Office {
         this.employeeList = employeeList;
     }
 
+    public String getFullAddress(){
+        return addressLine1 + " " + addressLine2;
+    }
+
     @Override
     public String toString() {
         return "Office{" +
